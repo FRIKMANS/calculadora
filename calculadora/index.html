@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <!-- Enlace a la hoja de estilos -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+    <!-- Contenedor principal de la calculadora -->
+    <div class="calculadora">
+      <!-- Pantalla donde se muestran los números y resultados -->
+      <input type="text" id="pantalla" disabled>
+      
+      <!-- Contenedor de botones -->
+      <div class="botones">
+        <!-- Primera fila -->
+        <button onclick="ingresarNumero('7')">7</button>
+        <button onclick="ingresarNumero('8')">8</button>
+        <button onclick="ingresarNumero('9')">9</button>
+        <button class="Operacion" onclick="establecerOperacion('÷')">÷</button>
+
+        <!-- Segunda fila -->
+        <button onclick="ingresarNumero('4')">4</button>
+        <button onclick="ingresarNumero('5')">5</button>
+        <button onclick="ingresarNumero('6')">6</button>
+        <button class="Operacion" onclick="establecerOperacion('×')">×</button>
+
+        <!-- Tercera fila -->
+        <button onclick="ingresarNumero('1')">1</button>
+        <button onclick="ingresarNumero('2')">2</button>
+        <button onclick="ingresarNumero('3')">3</button>
+        <button class="Operacion" onclick="establecerOperacion('-')">-</button>
+
+        <!-- Cuarta fila -->
+        <button onclick="ingresarNumero('0')">0</button>
+        <button class="Operacion" onclick="establecerOperacion('^')"> x<sup>y</sup> </button> <!-- Potencia -->
+        <button class="Operacion" onclick="establecerOperacion('√')"> √ </button> <!-- Raíz cuadrada -->
+        <button class="Operacion" onclick="establecerOperacion('+')" >+ </button>
+
+        <!-- Quinta fila (operaciones avanzadas y limpiar) -->
+        <button onclick="ingresarNumero('.')">.</button>
+        <button class="Limpiar" onclick="limpiarPantalla()">C</button> <!-- Limpiar pantalla -->
+        <button class="Igual" onclick="calcular()">=</button>
+      </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
