@@ -116,7 +116,7 @@ function aplicarOperacion() {
       break;
     
     case '÷':
-      resultado = valor !== 0 ? resultado / valor : 'Error';
+      resultado = valor !== 0 ? resultado / valor : 'Syntax Error';
       break;
     
     case '^':
