@@ -1,2 +1,2 @@
-# frikmans.io
+# Calculadora
 Proyecto final Programación en internet 
